@@ -1,9 +1,33 @@
 <script setup lang="ts">
-const NAME   = 'Ubniyev Sultan'
-const TITLE  = 'CEO "StudyOn"'
-const EMAIL  = 'sulaubniyev11@gmail.com'
-const INSTA  = 'https://instagram.com/sultanubniyev'
-const WHATS  = 'https://wa.me/77027314000?text=Hello%20Sultan!' // международный формат
+const vcard = `
+BEGIN:VCARD
+VERSION:3.0
+N:Убниев;Султан;;;
+FN:Убниев Султан
+TITLE:CEO "StudyOn"
+EMAIL;TYPE=INTERNET,PREF:sulaubniyev11@gmail.com
+TEL;TYPE=CELL:+7-702-731-4000
+URL:https://instagram.com/sultanubniyev
+ADR;TYPE=WORK,PREF:;;Lorem ipsum street;;;;
+END:VCARD
+`;
+
+function addContact() {
+  // Способ 1: data: URL — часто лучше срабатывает на iOS
+  const dataUrl = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcard);
+  window.location.href = dataUrl;
+
+  // Способ 2 (запасной): blob URL (иногда лучше на Android)
+  // const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+  // const url = URL.createObjectURL(blob);
+  // const a = document.createElement('a');
+  // a.href = url;        // ВАЖНО: НЕ ставим a.download — иначе точно скачает файл
+  // a.target = '_self';
+  // document.body.appendChild(a);
+  // a.click();
+  // a.remove();
+  // setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
 </script>
 
 <template>
@@ -19,14 +43,12 @@ const WHATS  = 'https://wa.me/77027314000?text=Hello%20Sultan!' // междун�
 
     <nav class="actions" aria-label="Действия">
       <!-- 1) vCard -->
-      <a class="btn" href="/contact.vcf" download aria-label="Добавить контакт">
+      <button class="btn" @click="addContact">
         <span class="ico" aria-hidden="true">
-          <!-- контакты -->
           <svg viewBox="0 0 24 24"><path d="M4 3h12a2 2 0 0 1 2 2v2H6a3 3 0 0 0-3 3v7a2 2 0 0 0 2 2h13v-2H5v-7a1 1 0 0 1 1-1h13V5a4 4 0 0 0-4-4H4z"/><path d="M18 13h-2v-2h-2v2h-2v2h2v2h2v-2h2z"/></svg>
         </span>
         <span>Добавить контакт</span>
-      </a>
-
+      </button>
       <!-- 2) email -->
       <a class="btn" :href="`mailto:${EMAIL}?subject=Hello`" aria-label="Написать email">
         <span class="ico" aria-hidden="true">
