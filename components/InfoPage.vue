@@ -6,7 +6,7 @@ FN:Убниев Султан
 ORG:StudyOn
 TITLE:CEO
 TEL;TYPE=CELL,VOICE:+77027314000
-EMAIL;TYPE=INTERNET:sultan@example.com
+EMAIL;TYPE=INTERNET:sulaubniyev11@gmail.com
 URL:https://studyon-aqtobe.kz
 URL:https://instagram.com/sultanubniyev
 ADR;TYPE=WORK:;;проспект Алии Молдагуловой\, 58/1;Актобе;Актюбинская область;;Казахстан
@@ -38,7 +38,7 @@ function addContact() {
       </div>
       <h1 class="name">{{ NAME }}</h1>
       <img src="../public/logo(studyon).png" alt="Company Logo" style="width: min(150px, 30vw); height: auto; margin-top: 10px;">
-      <p class="subtitle">CEO "StudyOn"</p>
+      <p class="subtitle">CEO "StudyON"</p>
     </section>
 
     <nav class="actions" aria-label="Действия">
@@ -57,7 +57,7 @@ function addContact() {
             <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18c-1.38 0-2.63-1.64-3.28-4h6.56c-.65 2.36-1.9 4-3.28 4Zm-3.5-6c-.32-1.24-.5-2.62-.5-4s.18-2.76.5-4h7c.32 1.24.5 2.62.5 4s-.18 2.76-.5 4h-7ZM12 4c1.38 0 2.63 1.64 3.28 4H8.72C9.37 5.64 10.62 4 12 4Z"/>
           </svg>
         </span>
-        <span>Website "StudyOn"</span>
+        <span>Website "StudyON"</span>
       </a>
 
       <!-- 3) Instagram -->
