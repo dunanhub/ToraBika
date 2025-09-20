@@ -1,27 +1,27 @@
 <script setup lang="ts">
-const vcard = `
-BEGIN:VCARD
+const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:Ubniyev;Sultan;;;
 FN:Убниев Султан
-TITLE:CEO "StudyOn"
-URL;https://studyon-aqtobe.kz
-TEL;TYPE=CELL:+7-702-731-4000
+ORG:StudyOn
+TITLE:CEO
+TEL;TYPE=CELL,VOICE:+77027314000
+EMAIL;TYPE=INTERNET:sultan@example.com
+URL:https://studyon-aqtobe.kz
 URL:https://instagram.com/sultanubniyev
-ADR;TYPE=WORK,PREF:;;проспект Алии Молдагуловой, 58/1, Актобе, Астана район, 1 этаж;;;;
-END:VCARD
-`;
+ADR;TYPE=WORK:;;проспект Алии Молдагуловой\, 58/1;Актобе;Актюбинская область;;Казахстан
+END:VCARD`;
 
 function addContact() {
-  // Способ 1: data: URL — часто лучше срабатывает на iOS
+  // data: URL — чаще всего сразу открывает экран добавления контакта
   const dataUrl = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcard);
   window.location.href = dataUrl;
 
-  // Способ 2 (запасной): blob URL (иногда лучше на Android)
+  // Резерв: blob URL (иногда срабатывает лучше на Android)
   // const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
   // const url = URL.createObjectURL(blob);
   // const a = document.createElement('a');
-  // a.href = url;        // ВАЖНО: НЕ ставим a.download — иначе точно скачает файл
+  // a.href = url; // НЕ ставим a.download — иначе будет скачивание
   // a.target = '_self';
   // document.body.appendChild(a);
   // a.click();
