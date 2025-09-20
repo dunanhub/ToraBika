@@ -38,7 +38,7 @@ function addContact() {
       </div>
       <h1 class="name">{{ NAME }}</h1>
       <img src="../public/logo(studyon).png" alt="Company Logo" style="width: min(150px, 30vw); height: auto; margin-top: 10px;">
-      <p class="subtitle">{{ TITLE }}</p>
+      <p class="subtitle">CEO "StudyOn"</p>
     </section>
 
     <nav class="actions" aria-label="Действия">
