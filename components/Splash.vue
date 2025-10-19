@@ -5,7 +5,7 @@
     <div class="splash-card">
       <div class="splash-title">
         <!-- пути к public/ всегда абсолютные -->
-        <img class="splash-logo-img" src="/logo(studyon).png" alt="Company Logo" />
+        <img class="splash-logo-img" src="/logo(kolominsky).png" alt="Company Logo" />
       </div>
 
       <div class="splash-sub" aria-live="polite">
