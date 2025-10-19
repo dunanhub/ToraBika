@@ -1,10 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Убниев;Султан;;;
-FN:Убниев Султан
-TITLE:CEO "StudyOn"
-EMAIL;TYPE=INTERNET,PREF:sulaubniyev11@gmail.com
-TEL;TYPE=CELL:+7-702-731-4000
-URL:https://instagram.com/sultanubniyev
-ADR;TYPE=WORK,PREF:;;Lorem ipsum street;;;;
+N:Mamedov;Idris;;;
+FN:Мамедов Идрис Мадиддиоглы
+ORG:ToraBika
+TITLE:Руководитель отдела продаж по ключевым клиентам
+TEL;TYPE=CELL,VOICE:+77015643331
+EMAIL;TYPE=INTERNET:mamedov.i@prestij.kz
+ADR;TYPE=WORK:;;улица Ратушного\, 64А;город Алматы;;Казахстан
 END:VCARD

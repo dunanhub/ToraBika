@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   app: {
-    baseURL: '/Business-Card/',   // имя репозитория, со слэшем
+    baseURL: '/ToraBika/',   // имя репозитория, со слэшем
   },
   nitro: {
     preset: 'github-pages',
